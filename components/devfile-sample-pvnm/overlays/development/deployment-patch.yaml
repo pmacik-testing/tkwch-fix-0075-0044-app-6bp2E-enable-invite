@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-pvnm
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0044-tenant/tkwch-fix-0075-0044-app/devfile-sample-pvnm@sha256:1e24d151c2d81b8d0e3ec6186ef53b26e693163b35ff4a5bf96352cb0b12a4b2
+        name: my-nodejs
+        resources: {}
+status: {}
